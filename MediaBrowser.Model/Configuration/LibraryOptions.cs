@@ -24,7 +24,11 @@ namespace MediaBrowser.Model.Configuration
             PathInfos = Array.Empty<MediaPathInfo>();
             EnableAutomaticSeriesGrouping = true;
             SeasonZeroDisplayName = "Specials";
+
+            FetchMetadataOnContent = true;
         }
+
+        public bool FetchMetadataOnContent { get; set; }
 
         public bool EnablePhotos { get; set; }
 
